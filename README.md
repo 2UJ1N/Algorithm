@@ -1,9 +1,15 @@
 👩🏻‍💻 알고리즘 문제 해결 by Python
 
+## 목표
+1. 알고리즘별 문제 많이 풀어보기
+2. 푼 문제 velog / tistory에 정리하면서 추후 복기 가능하도록!
+3. 랜덤한 문제 - 알고리즘 파악하고 풀어보기
+
 
 ### 백준
 
--[단계별 풀어보기](https://www.acmicpc.net/step)
+- 기본 문제
+-[Do it 알고리즘 코딩테스트 1-10](https://www.acmicpc.net/workbook/view/13247)
 
 1주차. 배열과 리스트: `1 ~ 10`, 스택과 큐: `11 ~ 14`
 - `구간 합` 3 4 5
@@ -43,5 +49,10 @@
 
 9주차. DP: `84 ~ 95`, 기하학: `96 ~ 100`
 
+- 알고리즘별 문제집
+  - BFS/DFS
+    -[BaaaaaaaaaaarkingDog BFS](https://www.acmicpc.net/workbook/view/7313
+    -[DFS+BFS 필수 문제](https://www.acmicpc.net/workbook/view/1983)
+    -[DFS, BFS 추천문제](https://www.acmicpc.net/workbook/view/1833)
 
 ### 프로그래머스
