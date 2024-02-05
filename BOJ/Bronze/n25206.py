@@ -1,4 +1,4 @@
-# 다시
+#
 # 25206
 # 너의 평점은
 # https://www.acmicpc.net/problem/25206
