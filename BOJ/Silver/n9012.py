@@ -3,8 +3,6 @@
 # 괄호
 # https://www.acmicpc.net/problem/9012
 
-import sys
-
 t = int(input())
 
 for _ in range(t):
