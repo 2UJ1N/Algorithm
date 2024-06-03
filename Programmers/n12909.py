@@ -1,17 +1,14 @@
 #
-# [Level 1] 올바른 괄호
+# [Level 2] 올바른 괄호
 # https://school.programmers.co.kr/learn/courses/30/lessons/12909
 
-from collections import deque
-
 def solution(s):
-    queue = deque()
-    
+    stack = list()
     for i in s:
-        if i == '(': queue.append(i)
+        if i == '(': stack.append(i)
         elif i == ')':
-            if len(queue) == 0: return False
-            if queue[0] == '(': queue.popleft()
+            if len(stack) != 0:
+                stack.pop()
             else: return False
     
-    return len(queue) == 0
+    return len(stack) == 0

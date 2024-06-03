@@ -10,3 +10,7 @@ def solution(arr):
         if answer[-1] == a: pass
         else: answer.append(a)
     return answer
+
+    # for i in s:
+    #     if a[-1:] == [i]: continue
+    #     a.append(i)
