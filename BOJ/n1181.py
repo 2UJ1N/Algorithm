@@ -3,19 +3,11 @@
 # 단어 정렬
 # https://www.acmicpc.net/problem/1181
 
-import sys
-input = sys.stdin.readline
-
 n = int(input())
-word = [0] * 51
+words = [str(input()) for i in range(n)]
 
-for _ in range(n):
-    w = input()
-    if word[len(w)] != 0: word[len(w)].append(w)
-    else: word[len(w)] = [w]
+word = list(set(words))
+word.sort()
+word.sort(key=len)
 
-for w in word:
-    if w != 0:
-        w.sort()
-        for i in w:
-            print(i)
+for w in word: print(w)
