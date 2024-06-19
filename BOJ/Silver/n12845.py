@@ -10,10 +10,13 @@ n = int(input())
 card = list(map(int, input().split()))
 card.sort(reverse=True)
 
-gold = 0
-level = 0
-for i in range(len(card) - 1):
-    if card[i] > level: level = card[i]
-    if card[i + 1] <= level: gold += level + card[i + 1]
+# gold = 0
+# level = 0
+# for i in range(len(card) - 1):
+#     if card[i] > level: level = card[i]
+#     if card[i + 1] <= level: gold += level + card[i + 1]
 
+# print(gold)
+
+gold = sum(card[1:]) + card[0] * (len(card) - 1)
 print(gold)
