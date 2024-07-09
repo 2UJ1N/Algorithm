@@ -22,11 +22,9 @@ for i in range(m):
                     state[j] = 1
 
         elif a == 3:
-            for j in range(b - 1, c):
-                if state[j] == 1: state[j] = 0
+            state[b-1 : c] = [0] * (c - b + 1)
 
         elif a == 4:
-            for j in range(b - 1, c):
-                if state[j] == 0: state[j] = 1
-
-print(state)
+            state[b-1 : c] = [1] * (c - b + 1)
+            
+print(*state)
