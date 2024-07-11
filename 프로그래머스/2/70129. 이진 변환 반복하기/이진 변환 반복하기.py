@@ -1,6 +1,5 @@
 def solution(s):
-    cnt = 0
-    cnt0 = 0
+    cnt, cnt0 = 0, 0
     
     while s != '1':
         cnt += 1
