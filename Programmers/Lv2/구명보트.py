@@ -7,11 +7,13 @@ def solution(people, limit):
             boat += 1
             return boat
         else:
-            if people[0] + people[-1] <= limit:
-                boat += 1
-                people = people[1:-1]
-            else:
-                boat += 1
-                people = people[1:]
-    
+            cnt = 0
+            for i in range(len(people) - 1):
+                if people[i] + people[-1] <= limit:
+                    break
+                else: 
+                    cnt += 1
+            boat += cnt + 1
+            people = people[cnt + 1 : -1]
+
     return boat
