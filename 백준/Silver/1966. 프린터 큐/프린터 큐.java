@@ -14,7 +14,7 @@ public class Main {
 			int N = in.nextInt();
 			int M = in.nextInt();
 			
-			LinkedList<int[]> q = new LinkedList<>();	// Queue로 활용 할 연결리스트
+			LinkedList<int[]> q = new LinkedList<>();	// Queue 연결리스트
  
 			for (int i = 0; i < N; i++) {
 				// {초기 위치, 중요도}
@@ -26,7 +26,7 @@ public class Main {
 			while (!q.isEmpty()) {	// 한 케이스에 대한 반복문
 				
 				int[] front = q.poll();	// 가장 첫 원소
-				boolean isMax = true;	// front 원소가 가장 큰 원소인지를 판단하는 변수
+				boolean isMax = true;	// front 원소가 가장 큰 원소인지를 판단
 				
 				// 큐에 남아있는 원소들과 중요도를 비교 
 				for(int i = 0; i < q.size(); i++) {
@@ -40,18 +40,18 @@ public class Main {
 							q.offer(q.poll());
 						}
 						
-						// front원소가 가장 큰 원소가 아니였으므로 false를 하고 탐색을 마침
+						// front원소가 가장 큰 원소가 아니었음 -> false & 탐색종료
 						isMax = false;
 						break;
 					}
 				}
 				
-				// front 원소가 가장 큰 원소가 아니였으므로 다음 반복문으로 넘어감
+				// front원소가 가장 큰 원소가 아니었음 -> 다음 반복문
 				if(isMax == false) {
 					continue;
 				}
 				
-				// front 원소가 가장 큰 원소였으므로 해당 원소는 출력해야하는 문서다.
+				// front 원소가 가장 큰 원소였으므로 해당 원소를 출력해야 함
 				count++;
 				if(front[0] == M) {	// 찾고자 하는 문서라면 해당 테스트케이스 종료
 					break;
